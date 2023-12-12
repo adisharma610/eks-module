@@ -10,14 +10,6 @@ variable "azs_vpc" {
   type = list(string)
 }
 
-# variable "vpc_private_subnets" {
-#   type = list(string)
-# }
-
-# variable "vpc_public_subnets" {
-#   type = list(string)
-# }
-
 variable "enable_nat_gateway" {
   type = bool
   default = true
@@ -34,4 +26,11 @@ variable "multiple_vpc" {
 
 variable "no_vpc" {
   type = number
+}
+
+variable "no_eks" {
+  type = number
+}
+variable "multiple_eks" {
+  type = bool
 }
