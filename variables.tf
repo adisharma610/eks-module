@@ -1,5 +1,5 @@
 variable "name" {
-  type= string
+  type = string
 }
 
 variable "cidr_vpc" {
@@ -11,12 +11,12 @@ variable "azs_vpc" {
 }
 
 variable "enable_nat_gateway" {
-  type = bool
+  type    = bool
   default = true
 }
 
 variable "enable_vpn_gateway" {
-  type = bool
+  type    = bool
   default = false
 }
 
